@@ -27,6 +27,11 @@ class Initial extends AbstractMigration
                 'limit' => 100,
                 'null' => true,
             ])
+            ->addColumn('options', 'string', [
+                'default' => null,
+                'limit' => 255,
+                'null' => false,
+            ])
             ->addColumn('status', 'integer', [
                 'default' => null,
                 'limit' => 2,

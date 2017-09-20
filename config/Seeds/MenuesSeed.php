@@ -119,13 +119,6 @@ class MenuesSeed extends AbstractSeed
             ],
             [
                 'weekday' => null,
-                'name' => 'kukiwakame',
-                'kind' => 'dessert',
-                'country' => 'JP',
-                'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
-            ],
-            [
-                'weekday' => null,
                 'name' => 'kulfi',
                 'kind' => 'dessert',
                 'country' => 'IN',
@@ -136,6 +129,14 @@ class MenuesSeed extends AbstractSeed
                 'name' => 'tea',
                 'kind' => 'drink',
                 'country' => 'BD',
+                'options' => 'allow_sugar',
+                'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
+            ],
+            [
+                'weekday' => null,
+                'name' => 'green-tea',
+                'kind' => 'drink',
+                'country' => 'JP',
                 'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
             ],
             [
@@ -143,6 +144,7 @@ class MenuesSeed extends AbstractSeed
                 'name' => 'coffee',
                 'kind' => 'drink',
                 'country' => 'VN',
+                'options' => 'allow_sugar',
                 'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
             ],
             [
@@ -150,6 +152,7 @@ class MenuesSeed extends AbstractSeed
                 'name' => 'lassi',
                 'kind' => 'drink',
                 'country' => 'IN',
+                'options' => 'allow_sugar',
                 'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
             ],
             

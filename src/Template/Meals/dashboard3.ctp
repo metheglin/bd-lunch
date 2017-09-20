@@ -79,12 +79,12 @@
                             <span class="flag-icon flag-icon-bd"></span>
                         </label>
                     </h3>
-                    <h3>
+                    <!-- <h3>
                         <label for="dessert_jp">
                             <input type="radio" name="dessert_country" value="jp" id="dessert_jp" />
                             <span class="flag-icon flag-icon-jp"></span>
                         </label>
-                    </h3>
+                    </h3> -->
                     <h3>
                         <label for="dessert_in">
                             <input type="radio" name="dessert_country" value="in" id="dessert_in" />
@@ -107,6 +107,12 @@
                         <label for="drink_bd">
                             <input type="radio" name="drink_country" value="bd" id="drink_bd" />
                             <span class="flag-icon flag-icon-bd"></span>
+                        </label>
+                    </h3>
+                    <h3>
+                        <label for="drink_jp">
+                            <input type="radio" name="drink_country" value="jp" id="drink_jp" />
+                            <span class="flag-icon flag-icon-jp"></span>
                         </label>
                     </h3>
                     <h3>
