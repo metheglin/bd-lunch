@@ -1,0 +1,19 @@
+/vendor/*
+/config/app.php
+/tmp/*
+/logs/*
+
+.DS_Store
+
+config/app_dev.php
+config/env.php
+
+/webroot/admintheme
+/webroot/bootstrap_u_i
+/webroot/debug_kit
+/webroot/gentelella
+/webroot/less
+/webroot/utils
+
+# Directory for Static Tools
+/webroot/tools

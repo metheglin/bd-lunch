@@ -1,0 +1,59 @@
+/*This is custom CSS page*/
+
+#busy-indicator {
+  display: none;
+  position: fixed;
+  z-index: 10000000000;
+  width: 100%;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50%;
+  margin-top: -35px;
+  text-align: center;
+  font-size: 70px;
+  line-height: 70px;
+  color: #33333 !important;
+}
+
+/*Task Home layouts*/
+.task-home .ssections {
+  border:2px solid #c1b8b8;
+  padding: 5px;
+  margin:10px 0px;
+}
+
+.task-home .card {
+  border:1px solid #c1b8b8;
+  cursor: pointer;
+  z-index: 10;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.task-home .stitle {
+  text-align: center;
+  color:black;
+}
+
+.task-home .droppable {
+  min-height: 50px;
+  position: relative;
+}
+#select-media-form .select2-container {
+min-width:350px;
+}
+
+.helptext{
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.helptext:before {
+    content: " \f059 ";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+ }
+.helptext_templates {
+  display: none; 
+}

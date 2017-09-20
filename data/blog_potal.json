@@ -1,0 +1,411 @@
+{
+  "issueType": [
+    {
+      "id": 1074156787,
+      "projectId": 1073832170,
+      "name": "タスク",
+      "color": "#7ea800",
+      "keyword": "TASUKU"
+    },
+    {
+      "id": 1074156786,
+      "projectId": 1073832170,
+      "name": "バグ",
+      "color": "#990000",
+      "keyword": "BAGU"
+    },
+    {
+      "id": 1074156788,
+      "projectId": 1073832170,
+      "name": "要望",
+      "color": "#ff9200",
+      "keyword": "YOUBOU"
+    },
+    {
+      "id": 1074156789,
+      "projectId": 1073832170,
+      "name": "その他",
+      "color": "#2779ca",
+      "keyword": "SONOTA"
+    }
+  ],
+  "priority": [
+    {
+      "id": 2,
+      "name": "High",
+      "keyword": "High"
+    },
+    {
+      "id": 3,
+      "name": "Normal",
+      "keyword": "Normal"
+    },
+    {
+      "id": 4,
+      "name": "Low",
+      "keyword": "Low"
+    }
+  ],
+  "category": [],
+  "user": [
+    {
+      "id": 1073867916,
+      "userId": "alex",
+      "name": "Alex",
+      "roleType": 94,
+      "keyword": "Alex alex Alex",
+      "icon": "UserLargeIcon.action?iconId=1073867916&amp;t=20151021135429"
+    },
+    {
+      "id": 1073960132,
+      "userId": "anton.kopilov@everforth.co.jp",
+      "name": "Anton",
+      "roleType": 255,
+      "keyword": "Anton anton.kopilov@everforth.co.jp Anton",
+      "icon": "UserLargeIcon.action?iconId=1073960132&amp;t=20150911165433"
+    },
+    {
+      "id": 1073902348,
+      "userId": "ashihara",
+      "name": "Ashihara",
+      "roleType": 94,
+      "keyword": "Ashihara ashihara Ashihara",
+      "icon": "icons/100/00_default.gif"
+    },
+    {
+      "id": 1074087102,
+      "userId": "ashraful.alam@reivo.co.jp",
+      "name": "ashraful.alam",
+      "roleType": 94,
+      "keyword": "ashraful.alam ashraful.alam@reivo.co.jp ashraful.alam",
+      "icon": "UserLargeIcon.action?iconId=1074087102&amp;t=20170601182850"
+    },
+    {
+      "id": 1074069785,
+      "userId": "a_oiwa",
+      "name": "a_oiwa",
+      "roleType": 94,
+      "keyword": "a_oiwa a_oiwa a_oiwa",
+      "icon": "icons/100/00_default_yg.gif"
+    },
+    {
+      "id": 1074089528,
+      "userId": "etou_bbg",
+      "name": "etou_bbg",
+      "roleType": 94,
+      "keyword": "etou_bbg etou_bbg etou_bbg",
+      "icon": "icons/100/00_default.gif"
+    },
+    {
+      "id": 1074087101,
+      "userId": "faysal.ahmed@reivo.co.jp",
+      "name": "faysal.ahmed",
+      "roleType": 94,
+      "keyword": "faysal.ahmed faysal.ahmed@reivo.co.jp faysal.ahmed",
+      "icon": "icons/100/00_default_gr.gif"
+    },
+    {
+      "id": 1073850525,
+      "userId": "fujishima",
+      "name": "Fujishima",
+      "roleType": 255,
+      "keyword": "Fujishima fujishima Fujishima",
+      "icon": "icons/100/00_default_yg.gif"
+    },
+    {
+      "id": 1073835584,
+      "userId": "hachinohe",
+      "name": "hachinohe",
+      "roleType": 255,
+      "keyword": "hachinohe hachinohe hachinohe",
+      "icon": "UserLargeIcon.action?iconId=1073835584&amp;t=20130925111446"
+    },
+    {
+      "id": 1073897100,
+      "userId": "iwadate_tkys@es-planning.jp",
+      "name": "iwadate",
+      "roleType": 255,
+      "keyword": "iwadate iwadate_tkys@es-planning.jp iwadate",
+      "icon": "UserLargeIcon.action?iconId=1073897100&amp;t=20160930165027"
+    },
+    {
+      "id": 1073825319,
+      "userId": "jenkins",
+      "name": "jenkins",
+      "roleType": 94,
+      "keyword": "jenkins jenkins jenkins",
+      "icon": "UserLargeIcon.action?iconId=1073825319&amp;t=20140508163527"
+    },
+    {
+      "id": 1074036257,
+      "userId": "justin",
+      "name": "Justin",
+      "roleType": 94,
+      "keyword": "Justin justin Justin",
+      "icon": "icons/100/00_default_b.gif"
+    },
+    {
+      "id": 1073965510,
+      "userId": "k.okamoto@reivo.co.jp",
+      "name": "k.okamoto",
+      "roleType": 94,
+      "keyword": "k.okamoto k.okamoto@reivo.co.jp k.okamoto",
+      "icon": "icons/100/00_default_yg.gif"
+    },
+    {
+      "id": 1073822488,
+      "userId": "kishida",
+      "name": "Kishida",
+      "roleType": 255,
+      "keyword": "Kishida kishida Kishida",
+      "icon": "UserLargeIcon.action?iconId=1073822488&amp;t=20161113152448"
+    },
+    {
+      "id": 1074020648,
+      "userId": "koichi.sone",
+      "name": "koichi.sone",
+      "roleType": 255,
+      "keyword": "koichi.sone koichi.sone koichi.sone",
+      "icon": "icons/100/00_default_gr.gif"
+    },
+    {
+      "id": 1074089529,
+      "userId": "kushi_bbg",
+      "name": "kushi_bbg",
+      "roleType": 94,
+      "keyword": "kushi_bbg kushi_bbg kushi_bbg",
+      "icon": "icons/100/00_default.gif"
+    },
+    {
+      "id": 1073820307,
+      "userId": "mrsht",
+      "name": "Masanori Morishita",
+      "roleType": 255,
+      "keyword": "Masanori Morishita mrsht Masanori Morishita",
+      "icon": "UserLargeIcon.action?iconId=1073820307&amp;t=20121124144332"
+    },
+    {
+      "id": 1074064112,
+      "userId": "masato.ikeda",
+      "name": "masato.ikeda",
+      "roleType": 94,
+      "keyword": "masato.ikeda masato.ikeda masato.ikeda",
+      "icon": "UserLargeIcon.action?iconId=1074064112&amp;t=20170328204938"
+    },
+    {
+      "id": 1073912695,
+      "userId": "M.Watanabe",
+      "name": "Mitsutoshi.Watanabe",
+      "roleType": 255,
+      "keyword": "Mitsutoshi.Watanabe M.Watanabe Mitsutoshi.Watanabe",
+      "icon": "UserLargeIcon.action?iconId=1073912695&amp;t=20160106172851"
+    },
+    {
+      "id": 1073962131,
+      "userId": "Nagatoshi",
+      "name": "Nagatoshi",
+      "roleType": 255,
+      "keyword": "Nagatoshi Nagatoshi Nagatoshi",
+      "icon": "icons/100/00_default_gr.gif"
+    },
+    {
+      "id": 1074081428,
+      "userId": "naoki.yoshikawa@everforth.co.jp",
+      "name": "naoki.yoshikawa@everforth.co.jp",
+      "roleType": 94,
+      "keyword": "naoki.yoshikawa@everforth.co.jp naoki.yoshikawa@everforth.co.jp naoki.yoshikawa@everforth.co.jp",
+      "icon": "icons/100/00_default_bg.gif"
+    },
+    {
+      "id": 1073862373,
+      "userId": "okada",
+      "name": "Okada Hidehisa",
+      "roleType": 255,
+      "keyword": "Okada Hidehisa okada Okada Hidehisa",
+      "icon": "NulabAccountIcon.action?userId=1073862373&name=large"
+    },
+    {
+      "id": 1074055594,
+      "userId": "ryuhei.okitsu",
+      "name": "ryohei.",
+      "roleType": 94,
+      "keyword": "ryohei. ryuhei.okitsu ryohei.",
+      "icon": "icons/100/00_default_gr.gif"
+    },
+    {
+      "id": 1074060870,
+      "userId": "ryohei.okitsu",
+      "name": "ryohei.okitsu",
+      "roleType": 255,
+      "keyword": "ryohei.okitsu ryohei.okitsu ryohei.okitsu",
+      "icon": "icons/100/00_default_b.gif"
+    },
+    {
+      "id": 1073941843,
+      "userId": "s.suzuki",
+      "name": "S. Suzuki",
+      "roleType": 255,
+      "keyword": "S. Suzuki s.suzuki S. Suzuki",
+      "icon": "icons/100/00_default_b.gif"
+    },
+    {
+      "id": 1074053227,
+      "userId": "sera",
+      "name": "sera",
+      "roleType": 94,
+      "keyword": "sera sera sera",
+      "icon": "icons/100/00_default_p.gif"
+    },
+    {
+      "id": 1073820435,
+      "userId": "shibao",
+      "name": "shibao",
+      "roleType": 255,
+      "keyword": "shibao shibao shibao",
+      "icon": "icons/100/animal_088.gif"
+    },
+    {
+      "id": 1073867920,
+      "userId": "shinichi.ito",
+      "name": "Shinichi Ito",
+      "roleType": 255,
+      "keyword": "Shinichi Ito shinichi.ito Shinichi Ito",
+      "icon": "UserLargeIcon.action?iconId=1073867920&amp;t=20170224145754"
+    },
+    {
+      "id": 1074100243,
+      "userId": "t.suzuki@reivo.co.jp",
+      "name": "t.suzuki",
+      "roleType": 94,
+      "keyword": "t.suzuki t.suzuki@reivo.co.jp t.suzuki",
+      "icon": "icons/100/00_default_gr.gif"
+    },
+    {
+      "id": 1074087100,
+      "userId": "tarikul.isram@reivo.co.jp",
+      "name": "Tarikul",
+      "roleType": 94,
+      "keyword": "Tarikul tarikul.isram@reivo.co.jp Tarikul",
+      "icon": "UserLargeIcon.action?iconId=1074087100&amp;t=20170526142018"
+    },
+    {
+      "id": 1074084498,
+      "userId": "ytabei",
+      "name": "ytabei",
+      "roleType": 94,
+      "keyword": "ytabei ytabei ytabei",
+      "icon": "icons/100/00_default_yg.gif"
+    },
+    {
+      "id": 1073838712,
+      "userId": "it@ebt.jp",
+      "name": "Yuki Ito",
+      "roleType": 94,
+      "keyword": "Yuki Ito it@ebt.jp Yuki Ito",
+      "icon": "UserLargeIcon.action?iconId=1073838712&amp;t=20140205105929"
+    },
+    {
+      "id": 1073965509,
+      "userId": "c.sato@reivo.co.jp",
+      "name": "佐藤千香子",
+      "roleType": 94,
+      "keyword": "佐藤千香子 c.sato@reivo.co.jp SATOUCHIKAKO",
+      "icon": "UserLargeIcon.action?iconId=1073965509&amp;t=20160126135205"
+    },
+    {
+      "id": 1073932497,
+      "userId": "seo.k@everforth.co.jp",
+      "name": "妹尾 一弘",
+      "roleType": 255,
+      "keyword": "妹尾 一弘 seo.k@everforth.co.jp SENOO KAZUHIRO",
+      "icon": "icons/100/04_male_programmer.gif"
+    },
+    {
+      "id": 1074014309,
+      "userId": "asmsuechan",
+      "name": "末永",
+      "roleType": 94,
+      "keyword": "末永 asmsuechan SUENAGA",
+      "icon": "UserLargeIcon.action?iconId=1074014309&amp;t=20160128182258"
+    },
+    {
+      "id": 1074089531,
+      "userId": "wseto0930",
+      "name": "瀬戸 航",
+      "roleType": 64,
+      "keyword": "瀬戸 航 wseto0930 SETOSEDO KOUWATARU",
+      "icon": "icons/100/00_default_pr.gif"
+    },
+    {
+      "id": 1074043565,
+      "userId": "fumika.shiratori",
+      "name": "白取 文佳",
+      "roleType": 94,
+      "keyword": "白取 文佳 fumika.shiratori SHIRATORI FUMIKA",
+      "icon": "icons/100/00_default_br.gif"
+    },
+    {
+      "id": 1073958298,
+      "userId": "seigo.aratake@everforth.co.jp",
+      "name": "荒武 誠悟",
+      "roleType": 94,
+      "keyword": "荒武 誠悟 seigo.aratake@everforth.co.jp ARATAKE SEIGO",
+      "icon": "icons/100/00_default_yg.gif"
+    },
+    {
+      "id": 1073898309,
+      "userId": "sakai",
+      "name": "酒井 美宇",
+      "roleType": 255,
+      "keyword": "酒井 美宇 sakai SAKAI BIU",
+      "icon": "NulabAccountIcon.action?userId=1073898309&name=large"
+    }
+  ],
+  "version": [],
+  "status": [
+    {
+      "id": 1,
+      "name": "Open"
+    },
+    {
+      "id": 2,
+      "name": "In Progress"
+    },
+    {
+      "id": 3,
+      "name": "Resolved"
+    },
+    {
+      "id": 4,
+      "name": "Closed"
+    }
+  ],
+  "resolution": [
+    {
+      "id": 0,
+      "name": "Fixed",
+      "keyword": "Fixed"
+    },
+    {
+      "id": 1,
+      "name": "Won't Fix",
+      "keyword": "Won't Fix"
+    },
+    {
+      "id": 2,
+      "name": "Invalid",
+      "keyword": "Invalid"
+    },
+    {
+      "id": 3,
+      "name": "Duplication",
+      "keyword": "Duplication"
+    },
+    {
+      "id": 4,
+      "name": "Cannot Reproduce",
+      "keyword": "Cannot Reproduce"
+    }
+  ],
+  "customField": []
+}
