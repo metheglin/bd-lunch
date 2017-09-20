@@ -10,7 +10,7 @@ class Initial extends AbstractMigration
             ->addColumn('weekday', 'integer', [
                 'default' => null,
                 'limit' => 2,
-                'null' => false,
+                'null' => true,
             ])
             ->addColumn('name', 'string', [
                 'default' => null,

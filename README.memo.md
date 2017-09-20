@@ -10,6 +10,13 @@ php -a
 bin/cake console
 ```
 
+```
+mysql> drop database bdlunch;
+mysql> create database bdlunch;
+bin/cake migrations migrate
+bin/cake migrations seed
+```
+
 ### Version1 --- Meal Introduction ---
 
 ```
