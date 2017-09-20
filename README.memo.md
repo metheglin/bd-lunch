@@ -11,6 +11,7 @@ bin/cake console
 ```
 
 ```
+mysql -uroot
 mysql> drop database bdlunch;
 mysql> create database bdlunch;
 bin/cake migrations migrate
@@ -57,4 +58,25 @@ diff  src/Template/Meals/dashboard3.ctp src/Template/Meals/dashboard.ctp
 
 /bin/cp -f src/Template/Meals/request3.ctp src/Template/Meals/request.ctp
 diff  src/Template/Meals/request3.ctp src/Template/Meals/request.ctp
+```
+
+### More Requirements...
+
+- Except GreenChili Option
+  - Allow "Non Green Chili" option
+- Sugar Option for Drink
+  - Allow "Non Sugar" option
+  - Each drink master data has `allow_sugar` attributes in the options column
+
+### Version4 --- Refactor ---
+
+```
+/bin/cp -f src/Controller/Meals4Controller.php src/Controller/MealsController.php
+diff  src/Controller/Meals4Controller.php src/Controller/MealsController.php
+
+/bin/cp -f src/Template/Meals/dashboard4.ctp src/Template/Meals/dashboard.ctp
+diff  src/Template/Meals/dashboard4.ctp src/Template/Meals/dashboard.ctp
+
+/bin/cp -f src/Template/Meals/request4.ctp src/Template/Meals/request.ctp
+diff  src/Template/Meals/request4.ctp src/Template/Meals/request.ctp
 ```
