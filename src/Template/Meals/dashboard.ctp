@@ -67,15 +67,9 @@
                             <span class="flag-icon flag-icon-vn"></span>
                         </label>
                     </h3>
-
-                    <div>
-                        <label for="meal_nonchili">
-                            <input type="checkbox" name="meal_nonchili" id="meal_nonchili" />
-                            <span style="font-size: 2rem;">Non Green Chili</span>
-                        </label>
-                    </div>
                 </div>
 
+                <?php /*
                 <h2>
                     Dessert
                 </h2>
@@ -86,12 +80,12 @@
                             <span class="flag-icon flag-icon-bd"></span>
                         </label>
                     </h3>
-                    <!-- <h3>
+                    <h3>
                         <label for="dessert_jp">
                             <input type="radio" name="dessert_country" value="jp" id="dessert_jp" />
                             <span class="flag-icon flag-icon-jp"></span>
                         </label>
-                    </h3> -->
+                    </h3>
                     <h3>
                         <label for="dessert_in">
                             <input type="radio" name="dessert_country" value="in" id="dessert_in" />
@@ -105,7 +99,9 @@
                         </label>
                     </h3>
                 </div>
+                */ ?>
 
+                <?php /*
                 <h2>
                     Drink
                 </h2>
@@ -114,12 +110,6 @@
                         <label for="drink_bd">
                             <input type="radio" name="drink_country" value="bd" id="drink_bd" />
                             <span class="flag-icon flag-icon-bd"></span>
-                        </label>
-                    </h3>
-                    <h3>
-                        <label for="drink_jp">
-                            <input type="radio" name="drink_country" value="jp" id="drink_jp" />
-                            <span class="flag-icon flag-icon-jp"></span>
                         </label>
                     </h3>
                     <h3>
@@ -135,13 +125,14 @@
                         </label>
                     </h3>
 
-                    <div >
+                    <!-- <div>
                         <label for="drink_nonsugar">
                             <input type="checkbox" name="drink_nonsugar" id="drink_nonsugar" />
-                            <span style="font-size: 2rem;">Non Sugar</span>
+                            Non Sugar
                         </label>
-                    </div>
+                    </div> -->
                 </div>
+                */ ?>
 
                 <div class="ln_solid"></div>
                 <div class="form-group">

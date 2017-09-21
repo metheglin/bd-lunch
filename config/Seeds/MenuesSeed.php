@@ -156,6 +156,13 @@ class MenuesSeed extends AbstractSeed
                 'options' => 'allow_sugar',
                 'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
             ],
+            [
+                'weekday' => 5,
+                'name' => 'udon',
+                'kind' => 'sub',
+                'country' => 'JP',
+                'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
+            ],
             
         ];
 

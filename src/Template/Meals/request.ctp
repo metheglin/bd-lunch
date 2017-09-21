@@ -17,38 +17,10 @@
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                <h2>Meal</h2>
                 <ul style="font-size: 3rem;">
                     <?php foreach ( $menues as $menu ) : ?>
                         <li>
                             <?php echo $menu->name . " (" . $menu->kind . ")"; ?>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-
-                <h2>Dessert</h2>
-                <ul style="font-size: 3rem;">
-                    <?php foreach ( $desserts as $dessert ) : ?>
-                        <li>
-                            <?php echo $dessert->name . " (" . $dessert->kind . ")"; ?>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-
-                <h2>Drink</h2>
-                <ul style="font-size: 3rem;">
-                    <?php foreach ( $drinks as $drink ) : ?>
-                        <li>
-                            <?php echo $drink->name . " (" . $drink->kind . ")"; ?>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-
-                <h2>Instrument</h2>
-                <ul style="font-size: 3rem;">
-                    <?php foreach ( $instruments as $instrument ) : ?>
-                        <li>
-                            <?php echo $instrument->name . " (" . $instrument->kind . ")"; ?>
                         </li>
                     <?php endforeach; ?>
                 </ul>

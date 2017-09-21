@@ -31,6 +31,16 @@ diff  src/Template/Meals/dashboard1.ctp src/Template/Meals/dashboard.ctp
 diff  src/Template/Meals/request1.ctp src/Template/Meals/request.ctp
 ```
 
+http://bd-lunch.rv-php5.6.net/
+
+- Main Code
+  - MealsController
+  - MenuesSeed
+- Explain
+  - Prepare Meal Data for many countries
+  - User also has country
+  - Choosing country and prepare the food
+
 ### Version2 --- Meal Bugfix ---
 
 - Bug1: When the country not specified, lunch gives error.
@@ -47,6 +57,11 @@ diff  src/Template/Meals/dashboard2.ctp src/Template/Meals/dashboard.ctp
 diff  src/Template/Meals/request2.ctp src/Template/Meals/request.ctp
 ```
 
+- Main Code
+  - MealsController
+- Explain
+  - Some bugfix code was added
+
 ### Version3 --- Dessert & Drink Introduction ---
 
 ```
@@ -59,6 +74,11 @@ diff  src/Template/Meals/dashboard3.ctp src/Template/Meals/dashboard.ctp
 /bin/cp -f src/Template/Meals/request3.ctp src/Template/Meals/request.ctp
 diff  src/Template/Meals/request3.ctp src/Template/Meals/request.ctp
 ```
+
+- Main Code
+  - MealsController
+- Explain
+  - Dessert/Drink Feature was added
 
 ### More Requirements...
 
@@ -81,74 +101,18 @@ diff  src/Template/Meals/dashboard4.ctp src/Template/Meals/dashboard.ctp
 diff  src/Template/Meals/request4.ctp src/Template/Meals/request.ctp
 ```
 
-```
-$Users  = \Cake\ORM\TableRegistry::get('Users');
-$Meals  = \Cake\ORM\TableRegistry::get('Meals');
-$organizer = new \App\Model\Service\MealOrganizer($Users->get(1), 
-    $Meals->getTodayMenu(),
-    [
-      "country" => "BD", 
-      "meal_nonchili" => true,
-    ]
-);
-$organizer->getMain();
-$organizer->getSub();
-$organizer->mealCountry();
-```
-
-```
-$Users  = \Cake\ORM\TableRegistry::get('Users');
-$Meals  = \Cake\ORM\TableRegistry::get('Meals');
-
-$dataset = [
-  [
-      'weekday' => 4,
-      'name' => 'khichuri',
-      'kind' => 'main',
-      'country' => 'BD',
-      'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
-  ],
-  [
-      'weekday' => 4,
-      'name' => 'haleem',
-      'kind' => 'main',
-      'country' => 'BD',
-      'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
-  ],
-  [
-      'weekday' => 4,
-      'name' => 'sushi',
-      'kind' => 'main',
-      'country' => 'JP',
-      'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
-  ],
-  [
-      'weekday' => 4,
-      'name' => 'yakisoba',
-      'kind' => 'main',
-      'country' => 'JP',
-      'isactive' => '1', 'isdel' => NULL, 'modified_by' => NULL, 'created_by' => NULL, 'modified' => '2017-06-20 08:29:59', 'created' => '2017-06-19 04:56:54',
-  ],
-];
-
-$organizer = new \App\Model\Service\MealOrganizer($Users->get(1), 
-    array_map(function($x){
-      return new \App\Model\Entity\Meal($x);
-    }, $dataset),
-    [
-      "country" => "BD", 
-      "meal_nonchili" => true,
-    ]
-);
-$organizer->getMain();
-
-$organizer = new \App\Model\Service\MealOrganizer($Users->get(1), [],
-    [
-      "country" => "BD", 
-      "meal_nonchili" => true,
-    ]
-);
-$organizer->mealCountry();
-```
-
-
+- Main Code
+  - Entity and Table
+  - MealOrganizer
+- Explain
+  - Meals/Dessert/Drink Table actually not exists but Create it because Model is for BusinessLogic 
+  - Implement meal fetching feature on Meals/Dessert/Drink Table
+  - Then, in order to pick proper meals according to the user preferences, 
+    Create MealOrganizer class
+  - Meal Organizer accepts user, meals, options arguments
+    - user: user information
+    - meals: alternatives of today's meals
+    - options: user preferences of today( sent dat afrom form )
+  - MealOrganizer is transparent against the parameters
+  - MealOrganizer is Plain PHP class so it's easy to try
+  - In the similar way, DessertOrganizer, DrinkOrganizer can be implemented

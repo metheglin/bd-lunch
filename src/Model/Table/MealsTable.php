@@ -34,8 +34,6 @@ class MealsTable extends MenuesTable
     }
 
     public function getTodayMenu( $weekday=null ) {
-        // $Meals = TableRegistry::get('Meals');
-
         $options = [
             'conditions'=>[
                 'isdel IS NULL',
