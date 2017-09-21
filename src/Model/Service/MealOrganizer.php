@@ -48,7 +48,7 @@ class MealOrganizer
      * ]
      */
     public function mealCountry() {
-      $country = strtoupper($this->options["country"]);
+      $country = !empty($this->options["country"]) ? strtoupper($this->options["country"]) : "BD";
       if ( empty($country) ) {
         $country = strtoupper($this->user->country);
       }
