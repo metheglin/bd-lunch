@@ -80,3 +80,13 @@ diff  src/Template/Meals/dashboard4.ctp src/Template/Meals/dashboard.ctp
 /bin/cp -f src/Template/Meals/request4.ctp src/Template/Meals/request.ctp
 diff  src/Template/Meals/request4.ctp src/Template/Meals/request.ctp
 ```
+
+```
+$Users  = \Cake\ORM\TableRegistry::get('Users');
+$Meals  = \Cake\ORM\TableRegistry::get('Meals');
+$organizer = new \App\Model\Service\MealOrganizer($Users->get(1), 
+    $Meals->getTodayMenu()
+);
+$organizer->getMain(["country" => "BD", "meals_nonchili" => true]);
+$organizer->mealCountry(["country" => "BD", "meals_nonchili" => true]);
+```

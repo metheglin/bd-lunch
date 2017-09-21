@@ -71,7 +71,7 @@
                     <div>
                         <label for="meal_nonchili">
                             <input type="checkbox" name="meal_nonchili" id="meal_nonchili" />
-                            Non Green Chili
+                            <span style="font-size: 2rem;">Non Green Chili</span>
                         </label>
                     </div>
                 </div>
@@ -135,10 +135,10 @@
                         </label>
                     </h3>
 
-                    <div>
+                    <div >
                         <label for="drink_nonsugar">
                             <input type="checkbox" name="drink_nonsugar" id="drink_nonsugar" />
-                            Non Sugar
+                            <span style="font-size: 2rem;">Non Sugar</span>
                         </label>
                     </div>
                 </div>

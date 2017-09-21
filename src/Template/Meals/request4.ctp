@@ -43,6 +43,15 @@
                         </li>
                     <?php endforeach; ?>
                 </ul>
+
+                <h2>Instrument</h2>
+                <ul style="font-size: 3rem;">
+                    <?php foreach ( $instruments as $instrument ) : ?>
+                        <li>
+                            <?php echo $instrument->name . " (" . $instrument->kind . ")"; ?>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
     </div>

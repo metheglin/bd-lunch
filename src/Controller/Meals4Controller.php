@@ -22,95 +22,63 @@ class MealsController extends AppController
      */
     public function request($id = 1)
     {
-        $Users = TableRegistry::get('Users');
+        $Users  = TableRegistry::get('Users');
         $Menues = TableRegistry::get('Menues');
+        $Meals  = TableRegistry::get('Meals');
+        $Desserts  = TableRegistry::get('Desserts');
+        $Drinks  = TableRegistry::get('Drinks');
         
         $user = $Users->get($id);
 
         $params = $this->request->getData();
 
-        if ( empty($params['meal_country']) ) {
-            $params['meal_country'] = $user->country;
-        }
-        
-        $weekday = date('w') + 1;
-        $options = [
-            'conditions'=>[
-                'Menues.isdel IS NULL',
-                'Menues.weekday' => $weekday,
-                'Menues.country' => strtoupper($params['meal_country']),
-            ],
-        ];
-        $menues = $Menues->find('all', $options)->all();
+        //
+        // Meals
+        //
+        $organizer = new \App\Model\Service\MealOrganizer($user, 
+            $Meals->getTodayMenu(),
+            [
+                "country" => !empty($params['meal_country']) ? $params['meal_country'] : null,
+                "meal_nonchili" => !empty($params['meal_nonchili']) ?: false,
+            ]
+        );
+        $mainMeals = $organizer->getMain();
+        $subMeals = $organizer->getSub();
+        $menues = array_merge( $mainMeals, $subMeals );
 
-        if ( count($menues) <= 0 ) {
-            $options = [
-                'conditions'=>[
-                    'Menues.isdel IS NULL',
-                    'Menues.weekday' => $weekday,
-                    'Menues.country' => 'BD',
-                ],
-            ];
-            $menues = $Menues->find('all', $options)->all();
-        }
+        //
+        // Dessert
+        //
+        $desOrganizer = new \App\Model\Service\DessertOrganizer($user, 
+            $Desserts->getMenu(),
+            ["country" => !empty($params['dessert_country']) ? $params['dessert_country'] : null,]
+        );
+        $desserts = $desOrganizer->getDessert();
 
-        // ====
-        // ==== Dessert Introduction
-        // ====
-        if ( empty($params['dessert_country']) ) {
-            $params['dessert_country'] = $user->country;
-        }
-        $options = [
-            'conditions'=>[
-                'Menues.isdel IS NULL',
-                'Menues.kind' => 'dessert',
-                'Menues.country' => strtoupper($params['dessert_country']),
-            ],
-        ];
-        $desserts = $Menues->find('all', $options)->all();
-        if ( count($desserts) <= 0 ) {
-            $options = [
-                'conditions'=>[
-                    'Menues.isdel IS NULL',
-                    'Menues.kind' => 'dessert',
-                    'Menues.country' => 'BD',
-                ],
-            ];
-            $desserts = $Menues->find('all', $options)->all();
-        }
-        // ====
-        // ====
+        //
+        // Drink
+        //
+        $drinkOrganizer = new \App\Model\Service\DrinkOrganizer($user,
+            $Drinks->getMenu(),
+            [
+                "country" => !empty($params['drink_country']) ? $params['drink_country'] : null,
+                "drink_nonsugar" => !empty($params['drink_nonsugar']) ?: false,
+            ]
+        );
+        $drinks = $drinkOrganizer->getDrink();
+        $drinkInsts = $drinkOrganizer->getInstrument();
+        $drinks = array_merge( $drinks, $drinkInsts );
 
-        // ====
-        // ==== Drink Introduction
-        // ====
-        if ( empty($params['drink_country']) ) {
-            $params['drink_country'] = $user->country;
-        }
-        $options = [
-            'conditions'=>[
-                'Menues.isdel IS NULL',
-                'Menues.kind' => 'drink',
-                'Menues.country' => strtoupper($params['drink_country']),
-            ],
-        ];
-        $drinks = $Menues->find('all', $options)->all();
-        if ( count($drinks) <= 0 ) {
-            $options = [
-                'conditions'=>[
-                    'Menues.isdel IS NULL',
-                    'Menues.kind' => 'drink',
-                    'Menues.country' => 'BD',
-                ],
-            ];
-            $drinks = $Menues->find('all', $options)->all();
-        }
-        // ====
-        // ====
+        //
+        // Instruments
+        //
+        $instOrganizer = new \App\Model\Service\InstrumentOrganizer($user);
+        $instruments = $instOrganizer->getInstrument();
 
         $this->set('menues', $menues);
         $this->set('desserts', $desserts);
         $this->set('drinks', $drinks);
+        $this->set('instruments', $instruments);
     }
 
 }
